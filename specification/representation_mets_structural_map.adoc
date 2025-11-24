@@ -1,0 +1,13 @@
+=== Representation METS structural map (element structMap)
+The METS structural map element is the only mandatory element in the METS specification and is hence mandatory within the Representation METS. There must be one structural map present in each representation METS file following the requirements of the CSIP. 
+
+The structural map should reference the documentation/paradata file group located in the documentation/paradata sub-folder by means of a separate div element.
+
+The structural map should reference the documentation/authentication file group located in the documentation/paradata sub-folder by means of a separate div element.
+
+The structural map should reference the documentation/other file group located in the documentation/other sub-folder by means of a separate div element.
+
+Implementers are welcome to define additional structural maps for their internal purposes by repeating the structMap element. The specific requirements for elements, sub-elements and attributes for 3D HM CITS, which differ from the CSIP, are listed in the following table. 
+
+
+

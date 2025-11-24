@@ -1,0 +1,83 @@
+:doctype: book
+[chapter]
+= Implementation
+:figure-caption!:
+:sectnums:
+:imagesdir: figs
+
+== Package Structure
+The CITS 3D HM inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in Figure 3. It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and Representation level but otherwise the structure is identical. 
+
+.Figure 3: Example Information Package Folder Structure
+image::fig_3_package_structure.svg[]
+
+Multiple formats of the same 3D model which have been created through transformation events may be included in a single package and held in individual Representations (for example proprietary BIM models and STEP-IFC derivations). Information related to a transformation event (software used, parameters etc) should be included in the relevant documentation/paradata folder and details of the event recorded in PREMIS.
+
+3D models of the same physical object can be created via different means (e.g scanning vs photogrammetry) and it is a matter for the repository to determine if it considers these models to be the same or a different intellectual entity and thus whether they should be in the same or different information packages. Should models created via different methods be included in the same package then Rights information and Paradata may differ for each model and should therefore be held at Representation level. Submission Agreements between Producer and Archive should detail whether different capture/creation versions of the same physical object are permitted in a single information package.
+
+It is strongly recommended that as much documentation as possible related to the creation, context, provenance and terms of use of the model is included in the information package such as for example: licence terms, model creation environment, project overview, model creation and transformation information. The CITS 3D HM recommends the inclusion of such information related to the production of the model in a documentation/paradata sub-folder and related to archiving and use of the model in a documentation/other sub-folder. If model Authentication information (such as data quality rules) is included, then this can also be included in the optional documentation/authentication folder.
+
+Further information on model Authentication can be found in the CITS 3D PM at: https://github.com/DILCISBoard/CITS-3D PM/tree/rel/v1.0.0. The inclusion of a Submission Agreement in the information package is  recommended and should be located in the documentation/other sub-folder.
+
+Individual folder structures are recommended within each representation/data folder to provide a structure appropriate to the model format used. 
+
+Specific requirements for the CITS 3D HM folder structure are as follows:
+
+**3D HM1**: the package MUST have at least one Representation in the Representations folder 
+
+**3D HM2**: the Documentation folder at package and Representation level SHOULD have a sub-folder named Paradata.  This is an extension of CSIPSTR16.
+
+**3D HM3**: the Documentation folder at package and Representation level SHOULD include a sub-folder named Other. This is an extension of CSIPSTR16.
+
+**3D HM4 **: the Documentation folder at package level and Representation level MAY include a sub-folder named Authentication. This is an extension of CSIPSTR16.
+
+== Metadata and Supporting Information
+=== Descriptive Metadata
+The package should contain general Descriptive Metadata about the digitised object and may contain specific Descriptive Metadata about the individual 3D model Representations. 
+
+Further detail on Descriptive Metadata is provided in the accompanying Guideline.
+
+**3D HM5**: the information package SHOULD contain descriptive metadata about the digitised object according to a current standard (such as MARC, MODS, Dublin Core, TEI Header, EAD, VRA, FGDC, DDI, CARARE, LIDO, CIDOC-CRM) or a locally produced, well- formed schema located within the metadata/descriptive folder.
+
+**3D HM6**: the information package MAY contain descriptive metadata about the representations of the digitised object according to a current standard (such as MARC, MODS, Dublin Core, TEI Header, EAD, VRA, FGDC, DDI, CARARE, LIDO, CIDOC-CRM) or a locally produced schema located in the representation/metadata/descriptive folders.
+
+=== Preservation Metadata
+Good practice in the management of 3D Heritage Model data requires that Information Packages include Preservation Metadata, specifically information related to:
+
+* Provenance
+* Reference
+* Fixity
+* Context
+
+It is recommended that users review the Common Specification for Preservation Metadata (CSPM). 
+
+CITS 3D HM recommends the inclusion of PREMIS files at Representation level that include  provenance, rendering environment, origination and if it exists Authentication information.
+
+**3D HM6**: there SHOULD be (a) PREMIS file(s) produced according to the CSPM and the requirements of this CITS in the representation/metadata/preservation folder of each Representation of the Information Package containing preservation metadata.
+
+=== Rights Metadata
+From the Principle above, detailed Rights information should be recorded within PREMIS. A PREMIS file should be included at either package level or in each Representation to contain this. 
+
+**3D HM7**: there SHOULD be (a) PREMIS file(s) produced according to CSPM and the requirements of this CITS in the metadata/preservation folder of the Information Package or within each Representation in the metadata/preservation folders containing Rights information related to all or individual models.
+
+=== Paradata
+Paradata is defined as supporting textual material which concerns the conditions under which the model digitisation (creation) took place, the intended purpose of the model, the rationales of decisions taken in the digitization process leading to the final result and, for reconstructions, the references to the documentation supporting the reconstruction. Further information is included in the accompanying Guideline to this specification.
+
+Within this 3D Heritage Model specification, a specific folder for Paradata is defined as a sub-folder of the  Documentation folder at root or Representation level. Within this CITS the concept of Paradata is extended to include any unstructured textual material related to the creation, processing, transformation, rendering or quality of the model(s). No current standards exist for the structuring or semantic description of Paradata.
+
+=== Creating, Transforming and Rendering Hardware and Software
+Details of the hardware and software used in the creation and transformation and required for the rendering of Heritage 3D Models can be captured in some specialised Descriptive Metadata schemas, described in event based ontologies such as the CRMdig extension of CIDOC-CRM, captured in PREMIS preservation metadata within the object (creating application and extensions), environment function (rendering environment), event and agent entity semantic units or can be recorded as simple, unstructured text. Any unstructured text should be located in the documentation/paradata folder.
+
+=== Quality Information
+Quality information may be included in some specialised metadata schemas or if unstructured text can be included in the documentation/paradata folder of each representation.
+
+==== Authentication Information
+If Authentication documentation exists, then the optional documentation/authentication subfolder can be used at both root and representation level. Authentication events can be recorded within PREMIS and examples are given in this CITS 3D HM specification and accompanying Guideline as to how this can be done (see https://github.com/DILCISBoard/CITS-3D PM/tree/rel/v1.0.0).
+
+=== Processing Information
+Processing information unless specifically encoded according to specialised schemas or ontologies can be included in the documentation/paradata sub-folder either at root or Representation level.
+
+=== Geometry Data
+Geometry data is closely aligned with the data model itself and should be included in the data folder within each Representation alongside the model data. Specific folder structures can be defined within the data folder for a model types or derivations.
+
+

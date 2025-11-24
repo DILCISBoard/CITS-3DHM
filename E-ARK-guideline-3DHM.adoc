@@ -1,0 +1,39 @@
+// E-ARK Content Information Type Specification Guideline for 3D Heritage Models - 3D HM
+= E-ARK CITS 3D HM: Content Information Type Specification Guideline for 3D Heritage Model Data
+Stephen Mackey
+:revnumber: v${1.0.0}
+:revdate: ${RELEASE_DATE}
+:revremark: Firet publication
+:doctype: book
+:imagesdir: figs
+:source-highlighter: rouge
+:rouge-style: github
+:org: Penwern Limited
+:sectnums:
+:partnums:
+:!chapter-signifier:
+:toc: macro
+:description: The Content Information Type Specification for 3D Heritage Model data (CITS 3D HM) is designed to be used for the transfer to archives as well as for records exchange\
+between different organisations and repositories of 3D cultural heritage model data. produced through any method and recorded in any format such as: point cloud models (for example by:\
+photogrammetry, laser scanning, structured light); CAD based models (including building information models, BIM amd heritage building information models, HBIM); volumetric models\
+(computer tomography); GIS models; and procedural modelling (reconstructions). This specification is supported by METS profiles for the Root and Representation METS files,\
+an example package and this Guideline document.\
+:sectnums!:
+:partnums!:
+:imagesdir:
+
+include::common-intro.adoc[]
+
+toc::[]
+
+:sectnums:
+:partnums:
+
+include::guideline.adoc[]
+include::glossary.adoc[]
+include::appendices/mets.vocabs.adoc[]
+
+:sectnums!:
+:partnums!:
+
+include::postface/postface.adoc[]
