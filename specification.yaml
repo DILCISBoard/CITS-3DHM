@@ -1,79 +1,79 @@
 ---
 
- tables:
-- name: metadata-root-root-requirements
-  heading: "Root METS Root Element Requirements"
-  type: requirements
-  section: metsRootElement
-  examples: true
-  requirements:
-	- 3D HM8
-      	- 3D HM9
-      	- 3D HM10
-      	- 3D HM11 
+tables:
+  - name: metadata-root-root-requirements
+    heading: "Root METS Root Element Requirements"
+    type: requirements
+    section: metsRootElement
+    examples: true
+    requirements:
+      - 3D_HM8
+      - 3D_HM9
+      - 3D_HM10
+      - 3D_HM11 
 
-- name: metadata-root-filesec-requirements
-   heading: "Root METS Structmap Element"
-   type: requirements
-   section: metsRootElement
-   examples: true
-   requirements:
-   	- 3D HM12
-	- 3D HM13
-	- 3D HM14
-	- 3D HM15
-	- 3D HM15
-	- 3D HM16
-	- 3D HM17
+  - name: metadata-croot-filesec-requirements
+    heading: "Root METS Structmap Element"
+    type: requirements
+    section: metsRootElement
+    examples: true
+    requirements:
+      - 3D_HM12
+      - 3D_HM13
+      - 3D_HM14
+      - 3D_HM15
+      - 3D_HM15
+      - 3D_HM16
+      - 3D_HM17
 
- - name: metadata-root-structmap-requirements
-   heading: "Root METS Structmap Element"
-   type: requirements
-   section: metsRootElement
-   examples: true
-   requirements:
-	- 3D HM18
-	- 3D HM19
-	- 3D HM20
-	- 3D HM21
-	- 3D HM22
-	- 3D HM23
-	- 3D HM24
-	- 3D HM25
-	- 3D HM26
-	- 3D HM27
-	- 3D HM28
-	- 3D HM29
-	- 3D HM30
-	- 3D HM31
-	- 3D HM32
-	- 3D HM33
-	
+  - name: metadata-root-structmap-requirements
+    heading: "Root METS Structmap Element"
+    type: requirements
+    section: metsRootElement
+    examples: true
+    requirements:
+      - 3D_HM18
+      - 3D_HM19
+      - 3D_HM20
+      - 3D_HM21
+      - 3D_HM22
+      - 3D_HM23
+      - 3D_HM24
+      - 3D_HM25
+      - 3D_HM26
+      - 3D_HM27
+      - 3D_HM28
+      - 3D_HM29
+      - 3D_HM30
+      - 3D_HM31
+      - 3D_HM32
+      - 3D_HM33
+  
 
- - name: metadata-rep-root-requirements
-   heading: "Representation METS Root Element"
-   type: requirements
-   section: metsRepresentationElement
-   examples: true
-   requirements:
-   	- 3D HM34
-	- 3D HM35
-	- 3D HM36
-	- 3D HM37
-	- 3D HM38
-
- - name: metadata-rep-filesec-requirements
-   heading: "Representation METS File Section (element fileSec)"
-   type: requirements
-   section: metsRepresentationElement
-   examples: true
-   requirements:
-    	- 3D HM39
-	- 3D HM40
-	- 3D HM41
-	- 3D HM42
-	- 3D HM43
-	- 3D HM44
+  - name: metadata-rep-root-requirements
+    heading: "Representation METS Root Element"
+    type: requirements
+    section: metsRepresentationElement
+    examples: true
+    requirements:
+       - 3D_HM34
+       - 3D_HM35
+       - 3D_HM36
+       - 3D_HM37
+       - 3D_HM38
+ 
+  - name: metadata-rep-filesec-requirements
+    heading: "Representation METS File Section (element fileSec)"
+    type: requirements
+    section: metsRepresentationElement
+    examples: true
+    requirements:
+        - 3D_HM39
+        - 3D_HM40
+        - 3D_HM41
+        - 3D_HM42
+        - 3D_HM43
+        - 3D_HM44
 
   - name: mets-rep-structmap-requirements
     heading: "Representation METS Structural Map (element structMap)"
@@ -81,44 +81,43 @@
     section: metsRepresentationElement
     examples: true
     requirements:
-  	- 3D HM45
-	- 3D HM46
-	- 3D HM47
-	- 3D HM48
-	- 3D HM49
-	- 3D HM50
-	- 3D HM51
-	- 3D HM52
-	- 3D HM53
-	- 3D HM54
- 	- 3D HM55
-	- 3D HM56
-	- 3D HM57
-	- 3D HM58
-	- 3D HM59
- 	- 3D HM60
-	- 3D HM61
-	- 3D HM62
-	- 3D HM63
-	- 3D HM64
+      - 3D_HM45
+      - 3D_HM46
+      - 3D_HM47
+      - 3D_HM48
+      - 3D_HM49
+      - 3D_HM50
+      - 3D_HM51
+      - 3D_HM52
+      - 3D_HM53
+      - 3D_HM54
+      - 3D_HM55
+      - 3D_HM56
+      - 3D_HM57
+      - 3D_HM58
+      - 3D_HM59
+      - 3D_HM60
+      - 3D_HM61
+      - 3D_HM62
+      - 3D_HM63
+      - 3D_HM64
 
 appendices:
-  
-- name: mets.root.examples
+
+  - name: mets.root.examples
     heading: "E-ARK CITS 3D HM Root METS Example"
     label: "A"
     type: mets
     section: Appendix
 
-- name: mets.representation.examples
+  - name: mets.representation.examples
     heading: "E-ARK 3D HM Representation METS Example"
     label: "B"
     type: mets
     section: Appendix
 
-- name: mets.vocabs
+  - name: mets.vocabs
     heading: "External Vocabularies"
     label: "C"
     type: mets
     section: Vocabulary
-
