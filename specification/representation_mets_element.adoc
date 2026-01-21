@@ -1,4 +1,4 @@
-== Representation METS Files
+= Representation METS Files
 The Representation METS files are used to describe the data structure as included in the data folder of each Representation (model representations) via the structMap element and to reference additional descriptive and preservation metadata
 
 === Representation METS root element
