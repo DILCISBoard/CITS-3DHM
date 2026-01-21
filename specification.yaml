@@ -12,7 +12,7 @@ tables:
       - 3D_HM10
       - 3D_HM11 
 
-  - name: metadata-croot-filesec-requirements
+  - name: metadata-root-filesec-requirements
     heading: "Root METS Structmap Element"
     type: requirements
     section: metsRootElement
