@@ -7,10 +7,10 @@ tables:
     section: metsRootElement
     examples: true
     requirements:
-      - 3D_HM8
-      - 3D_HM9
-      - 3D_HM10
-      - 3D_HM11 
+      - 3DHM8
+      - 3DHM9
+      - 3DHM10
+      - 3DHM11 
 
   - name: metadata-root-filesec-requirements
     heading: "Root METS Structmap Element"
@@ -18,13 +18,13 @@ tables:
     section: metsRootElement
     examples: true
     requirements:
-      - 3D_HM12
-      - 3D_HM13
-      - 3D_HM14
-      - 3D_HM15
-      - 3D_HM15
-      - 3D_HM16
-      - 3D_HM17
+      - 3DHM12
+      - 3DHM13
+      - 3DHM14
+      - 3DHM15
+      - 3DHM15
+      - 3DHM16
+      - 3DHM17
 
   - name: metadata-root-structmap-requirements
     heading: "Root METS Structmap Element"
@@ -32,22 +32,22 @@ tables:
     section: metsRootElement
     examples: true
     requirements:
-      - 3D_HM18
-      - 3D_HM19
-      - 3D_HM20
-      - 3D_HM21
-      - 3D_HM22
-      - 3D_HM23
-      - 3D_HM24
-      - 3D_HM25
-      - 3D_HM26
-      - 3D_HM27
-      - 3D_HM28
-      - 3D_HM29
-      - 3D_HM30
-      - 3D_HM31
-      - 3D_HM32
-      - 3D_HM33
+      - 3DHM18
+      - 3DHM19
+      - 3DHM20
+      - 3DHM21
+      - 3DHM22
+      - 3DHM23
+      - 3DHM24
+      - 3DHM25
+      - 3DHM26
+      - 3DHM27
+      - 3DHM28
+      - 3DHM29
+      - 3DHM30
+      - 3DHM31
+      - 3DHM32
+      - 3DHM33
   
 
   - name: metadata-rep-root-requirements
@@ -56,11 +56,11 @@ tables:
     section: metsRepresentationElement
     examples: true
     requirements:
-       - 3D_HM34
-       - 3D_HM35
-       - 3D_HM36
-       - 3D_HM37
-       - 3D_HM38
+       - 3DHM34
+       - 3DHM35
+       - 3DHM36
+       - 3DHM37
+       - 3DHM38
  
   - name: metadata-rep-filesec-requirements
     heading: "Representation METS File Section (element fileSec)"
@@ -68,12 +68,12 @@ tables:
     section: metsRepresentationElement
     examples: true
     requirements:
-        - 3D_HM39
-        - 3D_HM40
-        - 3D_HM41
-        - 3D_HM42
-        - 3D_HM43
-        - 3D_HM44
+        - 3DHM39
+        - 3DHM40
+        - 3DHM41
+        - 3DHM42
+        - 3DHM43
+        - 3DHM44
 
   - name: mets-rep-structmap-requirements
     heading: "Representation METS Structural Map (element structMap)"
@@ -81,26 +81,26 @@ tables:
     section: metsRepresentationElement
     examples: true
     requirements:
-      - 3D_HM45
-      - 3D_HM46
-      - 3D_HM47
-      - 3D_HM48
-      - 3D_HM49
-      - 3D_HM50
-      - 3D_HM51
-      - 3D_HM52
-      - 3D_HM53
-      - 3D_HM54
-      - 3D_HM55
-      - 3D_HM56
-      - 3D_HM57
-      - 3D_HM58
-      - 3D_HM59
-      - 3D_HM60
-      - 3D_HM61
-      - 3D_HM62
-      - 3D_HM63
-      - 3D_HM64
+      - 3DHM45
+      - 3DHM46
+      - 3DHM47
+      - 3DHM48
+      - 3DHM49
+      - 3DHM50
+      - 3DHM51
+      - 3DHM52
+      - 3DHM53
+      - 3DHM54
+      - 3DHM55
+      - 3DHM56
+      - 3DHM57
+      - 3DHM58
+      - 3DHM59
+      - 3DHM60
+      - 3DHM61
+      - 3DHM62
+      - 3DHM63
+      - 3DHM64
 
 appendices:
 
