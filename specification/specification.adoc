@@ -1,9 +1,5 @@
-:doctype: book
 [chapter]
 = Specification
-:figure-caption!:
-:sectnums:
-:imagesdir: figs
 
 == Requirements Structure
 The Content Information Type Specification for 3D Heritage Model data aims to define the necessary elements required to preserve the accessibility and authenticity of 3D Heritage Model data over time and across changing technical environments. The specification elevates the level (and adjusts the cardinality) of some of the requirements set out in the Common Specification (CSIP) and package specifications (namely SIP and AIP) and adds new requirements for the package structure, descriptive metadata, preservation metadata and accompanying METS files. The specification sets out general principles that underpin the specific requirements and further context for the requirements and principles can be found in the accompanying Guideline to this document.

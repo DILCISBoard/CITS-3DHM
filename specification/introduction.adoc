@@ -1,9 +1,5 @@
-:doctype: book
 [chapter]
 = Introduction
-:figure-caption!:
-:sectnums:
-:imagesdir: figs
 == Purpose
 
 == Purpose

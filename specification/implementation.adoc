@@ -1,9 +1,5 @@
-:doctype: book
 [chapter]
 = Implementation
-:figure-caption!:
-:sectnums:
-:imagesdir: figs
 
 == Package Structure
 The CITS 3D HM inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in Figure 3. It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and Representation level but otherwise the structure is identical. 
