@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 2025-12-19 Draft of E-ARK 3D HM REP METS Profile 1.0.0 -->
 <METS_Profile xmlns="http://www.loc.gov/METS_Profile/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mets="http://www.loc.gov/METS/" xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS" xmlns:sip="https://DILCIS.eu/XML/METS/SIPExtensionMETS" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/mets/xlink.xsd" STATUS="provisional" REGISTRATION="unregistered" ID="3DHMREPV1.0.0">
-  <URI LOCTYPE="URL" ASSIGNEDBY="local">https://cits3DHM.dilcis.eu/profile/E-ARK-3DHM-ROOT.xml</URI>
+  <URI LOCTYPE="URL" ASSIGNEDBY="local">https://cits3DHM.dilcis.eu/profile/E-ARK-3DHM-REPRESENTATION.xml</URI>
   <title>E-ARK 3DHM representation METS Profile 1.0 (cits3dhm_v1_0)</title>
   <abstract>This is the profile for a representation METS following E-ARK 3D HM. It's an extension of the E-ARK CSIP profile.</abstract>
   <date>2024-07-02T12:00:00</date>
@@ -615,7 +615,7 @@ The SIP dmdSec element should comply with
           </dl>
         </description>
       </requirement>
-      <requirement ID="3DPM59" REQLEVEL="MUST" EXAMPLES="structMapExample">
+      <requirement ID="3DPM61" REQLEVEL="MUST" EXAMPLES="structMapExample">
         <description>
           <head>Data division identifier</head>
           <p>Mandatory, 'xml:id' identifier must be unique within the package.</p>
@@ -631,7 +631,7 @@ The SIP dmdSec element should comply with
           </dl>
         </description>
       </requirement>
-      <requirement ID="3DPM60" REQLEVEL="MUST" EXAMPLES="structMapExample">
+      <requirement ID="3DPM62" REQLEVEL="MUST" EXAMPLES="structMapExample">
         <description>
           <head>Data division label</head>
           <p>The representations' data division '&lt;div&gt;` element must have the `@LABEL` attribute value "DATA" taken from the vocabulary.</p>

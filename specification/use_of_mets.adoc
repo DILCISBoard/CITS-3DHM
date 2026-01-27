@@ -1,10 +1,5 @@
-:doctype: book
 [chapter]
 = METS
-:figure-caption!:
-:sectnums:
-:imagesdir: figs
-
 
 == Use of METS in CITS 3D HM
 CSIP specifies that METS files should be located at the root of the package folder structure (Root METS) and optionally in each of the Representations within its respective root folder (Representation METS). CITS 3D HM has a requirement to contain at least one Representation and so will contain at minimum a root METS and a Representation METS file. 

@@ -1,9 +1,5 @@
-:doctype: book
 [chapter]
 = PREMIS
-:figure-caption!:
-:sectnums:
-:imagesdir: figs
 
 == Use of PREMIS in CITS 3D HM
 The use of PREMIS within the CITS 3D HM must follow the requirements of the CSPM which can be found at: https://dilcis.eu/content-types/cits-premis. 

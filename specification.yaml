@@ -75,7 +75,7 @@ tables:
         - 3DHM43
         - 3DHM44
 
-  - name: mets-rep-structmap-requirements
+  - name: metadata-rep-structmap-requirements
     heading: "Representation METS Structural Map (element structMap)"
     type: requirements
     section: metsRepresentationElement
