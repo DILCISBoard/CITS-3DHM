@@ -1,0 +1,2 @@
+===== Representation METS descriptive metadata section (element dmdSec)
+There are no specific requirements in CITS 3D HM for the Representation METS descriptive metadata section.

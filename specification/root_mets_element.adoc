@@ -1,5 +1,0 @@
-[chapter]
-= Root METS Root Element
-
-CITS 3D HM does not change or extend any of the requirements for the Root METS root element. 
-
