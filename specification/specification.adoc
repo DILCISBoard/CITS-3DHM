@@ -1,15 +1,14 @@
-[chapter]
-= Specification
+== Specification
 
-== Requirements Structure
+=== Requirements Structure
 The Content Information Type Specification for 3D Heritage Model data aims to define the necessary elements required to preserve the accessibility and authenticity of 3D Heritage Model data over time and across changing technical environments. The specification elevates the level (and adjusts the cardinality) of some of the requirements set out in the Common Specification (CSIP) and package specifications (namely SIP and AIP) and adds new requirements for the package structure, descriptive metadata, preservation metadata and accompanying METS files. The specification sets out general principles that underpin the specific requirements and further context for the requirements and principles can be found in the accompanying Guideline to this document.
 
-== Principles
+=== Principles
 
-=== Principle – data formats and representations
+==== Principle – data formats and representations
 The E-ARK 3D Heritage Model content specification should be data agnostic, i.e. any type of data or data format for 3D models can be packaged for long-term archiving and none is excluded; however the use of open-standards and the inclusion in packages of multiple representations is encouraged to reduce the risk of data format obsolescence and information loss. Where open 3D model data formats exist (e.g. STEP-IFC for BIM) their use alongside original, proprietary data formats is strongly encouraged.
 
-=== Principle - use of PREMIS
+==== Principle - use of PREMIS
 From the CSIP and Common Specification for Preservation Metadata (CSPM): 
 
 * PREMIS should be used to record detailed technical metadata,
@@ -21,7 +20,7 @@ From the CSIP and Common Specification for Preservation Metadata (CSPM):
 
 Use of PREMIS must conform to the requirements of the Common Specification for Preservation Metadata (CSPM). 
 
-== Use Cases for Archiving of 3D Heritage Model Data
+=== Use Cases for Archiving of 3D Heritage Model Data
 
 Further detail of the use cases for long-term archiving of 3D Heritage Model data is given in the accompanying Guideline. In summary, the use cases for archiving of 3D Heritage Model data  are determined to be:
 

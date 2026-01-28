@@ -9,9 +9,6 @@ Stephen Mackey
 :source-highlighter: rouge
 :rouge-style: github
 :org: Penwern Limited
-:sectnums:
-:partnums:
-:!chapter-signifier:
 :toc: macro
 :description: The Content Information Type Specification for 3D Heritage Model data (CITS 3D HM) is designed to be used for the transfer to archives as well as for records exchange \
 between different organisations and repositories of 3D cultural heritage model data. produced through any method and recorded in any format such as: point cloud models \
@@ -19,20 +16,28 @@ between different organisations and repositories of 3D cultural heritage model d
 (computer tomography); GIS models; and procedural modelling (reconstructions). This specification is supported by METS profiles for the Root and Representation METS files, \
 an example package and a Guideline document.
 
-:sectnums!:
-:partnums!:
+// Front matter - no numbering
+:!sectnums:
+:!partnums:
 include::common-intro.adoc[]
 
 toc::[]
 
+//Main content - enable part numbering
 :sectnums:
 :partnums:
+:chapter-signifier: 
+:sectnumlevels: 5
+
 include::introduction.adoc[]
 include::specification.adoc[]
+
+include::implementation.adoc[]
 include::use_of_mets.adoc[]
-include::root_mets_element.adoc[]
-include::tables/metadata-root-root-requirements.adoc[]
 include::root_mets_header_element.adoc[]
+include::root_mets_dmd.adoc[]
+include::root_mets_amd.adoc[]
+include::root_mets_filesec.adoc[]
 include::tables/metadata-root-filesec-requirements.adoc[]
 include::root_mets_structural_map.adoc[]
 include::tables/metadata-root-structmap-requirements.adoc[]
@@ -40,11 +45,23 @@ include::representation_mets_element.adoc[]
 include::tables/metadata-rep-root-requirements.adoc[]
 include::representation_mets_header_element.adoc[]
 include::tables/metadata-rep-filesec-requirements.adoc[]
+include::representation_mets_dmd.adoc[]
+include::representation_mets_amd.adoc[]
+include::representation_mets_filesec.adoc[]
 include::representation_mets_structural_map.adoc[]
 include::tables/metadata-rep-structmap-requirements.adoc[]
+include::premis.adoc[]
+
+// Back matter - disable nuumbering for glosary but keep for apprendices
+:!sectnums:
 include::glossary.adoc[]
+// Appendices - special numbering
+:sectnums:
+:appendix-caption: Appendix
 include::appendices/mets.root.examples.adoc[]
 include::appendices/mets.vocabs.adoc[]
-:sectnums!:
-:partnums!:
+
+// Postface - no numbering
+:!sectnums:
+:!partnums:
 include::postface/postface.adoc[]

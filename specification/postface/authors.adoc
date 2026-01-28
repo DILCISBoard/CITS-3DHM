@@ -1,20 +1,9 @@
-:imagesdir: figs
+== Authors
 
-== I Authors
-
+[cols="1,1,1"]
 |===
-
 | Name | Organisation
-| Stephen Mackey
-| Penwern Limited  
+| Stephen Mackey |
+| Penwern Limited | 
 |===    
-
-== Reviewers
-
-|  Name  | Organisation
-| Jaime Kaminski 
-| Highbury R&D
-| Karin Bredenberg
-| Sydarkivera
-|===
      

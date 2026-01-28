@@ -599,7 +599,7 @@ The SIP dmdSec element should comply with
           <dd>3DHM28</dd>
         </dl>
       </requirement>
-      <requirement ID="3DPM60" REQLEVEL="MUST" EXAMPLES="structMapExample">
+      <requirement ID="3DHM60" REQLEVEL="MUST" EXAMPLES="structMapExample">
         <description>
           <head>Data division</head>
           <p>Within 3DHM CITS data MUST be held in a data folder within a minimum single representation and described in the structMap within a single sub-division.</p>
@@ -615,7 +615,7 @@ The SIP dmdSec element should comply with
           </dl>
         </description>
       </requirement>
-      <requirement ID="3DPM61" REQLEVEL="MUST" EXAMPLES="structMapExample">
+      <requirement ID="3DHM61" REQLEVEL="MUST" EXAMPLES="structMapExample">
         <description>
           <head>Data division identifier</head>
           <p>Mandatory, 'xml:id' identifier must be unique within the package.</p>
@@ -631,7 +631,7 @@ The SIP dmdSec element should comply with
           </dl>
         </description>
       </requirement>
-      <requirement ID="3DPM62" REQLEVEL="MUST" EXAMPLES="structMapExample">
+      <requirement ID="3DHM62" REQLEVEL="MUST" EXAMPLES="structMapExample">
         <description>
           <head>Data division label</head>
           <p>The representations' data division '&lt;div&gt;` element must have the `@LABEL` attribute value "DATA" taken from the vocabulary.</p>
@@ -647,7 +647,7 @@ The SIP dmdSec element should comply with
           </dl>
         </description>
       </requirement>
-      <requirement ID="3DPM63" REQLEVEL="MUST" EXAMPLES="structMapExample">
+      <requirement ID="3DHM63" REQLEVEL="MUST" EXAMPLES="structMapExample">
         <description>
           <head>Authentication Documentation file references</head>
         </description>
@@ -661,7 +661,7 @@ The SIP dmdSec element should comply with
           <dd>v1.0.0</dd>
         </dl>
       </requirement>
-      <requirement ID="3DPM64" REQLEVEL="MUST" EXAMPLES="structMapExample">
+      <requirement ID="3DHM64" REQLEVEL="MUST" EXAMPLES="structMapExample">
         <description>
           <head>Authentication Documentation file group reference pointer</head>
         </description>

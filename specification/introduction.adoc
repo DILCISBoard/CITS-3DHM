@@ -1,11 +1,9 @@
-[chapter]
-= Introduction
-== Purpose
+== Introduction
 
-== Purpose
+=== Purpose
 The purpose of this document is to describe the Content Information Type Specification for 3D Heritage Model data (CITS 3D HM). The specification is designed to be used for the transfer to archives as well as for records exchange between different organisations and repositories. This specification is supported by METS profiles for the Root and Representation METS files, an example package and a guideline document.
 
-== Scope
+=== Scope
 
 Use of 3D data is widespread across many domains, with a plethora of applications and data formats. This 3D HM content specification limits its scope to the area of 3D models of cultural heritage artefacts, buildings and sites that have been produced as:
 
@@ -18,7 +16,7 @@ Use of 3D data is widespread across many domains, with a plethora of application
 Further background on this can be found in the accompanying guideline.
 The scope of the CITS may evolve in future to accommodate other production technologies. The CITS 3D HM has a related specification for 3D Product Model data, CITS 3D PM which can be found at: <https://dilcis.eu/content-types/cits-3d-product-model-data>.
 
-== Layered Data Model
+=== Layered Data Model
 
 This section introduces the role of the CITS 3D HM and its dependencies on the basic structures of the Information Package.
 
@@ -27,7 +25,7 @@ This specification is created based on the requirements of the Common Specificat
 
 The data model structure is based on a layered approach for information package definitions (Figure 2). The Common Specification for Information Packages (CSIP) forms the outermost layer. The general SIP, AIP and DIP specifications add respectively, submission, archiving and dissemination information to the CSIP specification. The third layer of the model represents specific content information type specifications, such as this 3D Heritage Model specification. Additional layers for business-specific specifications and local variant implementations of any specification can be added to suit the needs of the organisation.
 
-.Figure 2: Data Model Structure
+.Data Model Structure
 image::fig_2_data_model_structure.svg[]
 
 Every level in the data model structure inherits metadata entities and elements from the higher levels. In order to increase adoption, a flexible schema has been developed. This will allow for extension points where the schema in each layer can be extended to accommodate additional information on the next specific layer until, finally, the local implementation can add specific entities or metadata elements to satisfy specific local needs. Extension points can be implemented by:
