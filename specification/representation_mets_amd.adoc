@@ -5,4 +5,4 @@ The CSIP (and METS) categorise preservation metadata as administrative metadata,
 
 Note that CSPM requires that all PREMIS is referenced from the digiprovMD element, including PREMIS Rights information and not via a separate rightsMD statement. 
 
-There are no specific requirements in CITS 3D HM for the representation METS administrative metadata section.
+There are no specific requirements in CITS 3DHM for the representation METS administrative metadata section.

@@ -1,2 +1,2 @@
 ===== Representation METS header element (element metsHdr)
-There are no specific requirements for the header element in a CITS 3D HM Representation METS. The 3D HM Representation metsHdr element should comply with the metsHdr requirements in the appropriate Information Package profile and can be used to identify specific agents related to a Heritage Model representation.
+There are no specific requirements for the header element in a CITS 3DHM Representation METS. The 3DHM Representation metsHdr element should comply with the metsHdr requirements in the appropriate Information Package profile and can be used to identify specific agents related to a Heritage Model representation.

@@ -1,6 +1,6 @@
 ===== Root METS header element (element metsHdr)
 
-There are no specific requirements in CITS 3D HM for the root METS header section.
+There are no specific requirements in CITS 3DHM for the root METS header section.
 
 
 

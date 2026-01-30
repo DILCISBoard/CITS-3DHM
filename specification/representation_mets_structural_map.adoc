@@ -7,7 +7,7 @@ The structural map should reference the documentation/authentication file group 
 
 The structural map should reference the documentation/other file group located in the documentation/other sub-folder by means of a separate div element.
 
-Implementers are welcome to define additional structural maps for their internal purposes by repeating the structMap element. The specific requirements for elements, sub-elements and attributes for 3D HM CITS, which differ from the CSIP, are listed in the following table. 
+Implementers are welcome to define additional structural maps for their internal purposes by repeating the structMap element. The specific requirements for elements, sub-elements and attributes for 3DHM CITS, which differ from the CSIP, are listed in the following table. 
 
 
 
