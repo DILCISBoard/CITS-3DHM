@@ -1,19 +1,12 @@
-:doctype: book
-[chapter]
-= Guideline
-:figure-caption!:
-:sectnums:
-:imagesdir: figs
-
 == Introduction
 
 === Purpose
 
-The purpose of this document is to describe the Content Information Type Specification for 3D Heritage Model data (CITS 3D HM). The specification is designed to be used for the transfer to archives as well as for records exchange between different organisations and repositories. This specification is supported by METS profiles for the Root and Representation METS files, an example package and a Guideline document.
+The purpose of this document is to describe the Content Information Type Specification for 3D Heritage Model data (CITS 3DHM). The specification is designed to be used for the transfer to archives as well as for records exchange between different organisations and repositories. This specification is supported by METS profiles for the Root and Representation METS files, an example package and a Guideline document.
 
 === Scope
 
-Use of 3D data is widespread across many domains, with a plethora of applications and data formats. This 3D HM content specification limits its scope to the area of 3D models of cultural heritage artefacts, buildings and sites that have been produced as:
+Use of 3D data is widespread across many domains, with a plethora of applications and data formats. This 3DHM content specification limits its scope to the area of 3D models of cultural heritage artefacts, buildings and sites that have been produced as:
 
 * Point cloud models (for example by: photogrammetry, laser scanning, structured light),
 * CAD based models (including building information models, BIM and heritage building information models, HBIM),
@@ -21,7 +14,7 @@ Use of 3D data is widespread across many domains, with a plethora of application
 * GIS models, and
 * Procedural modelling (reconstructions).
 
-The scope of the CITS may evolve in future to accommodate other production technologies. The CITS 3D HM has a related specification for 3D Product Model data, CITS 3D PM which can be found at: https://dilcis.eu/content-types/cits-3d-product-model-data.
+The scope of the CITS may evolve in future to accommodate other production technologies. The CITS 3DHM has a related specification for 3D Product Model data, CITS 3DPM which can be found at: https://dilcis.eu/content-types/cits-3d-product-model-data.
 
 === Types of 3D Models
 3D models  used for cultural heritage may be created to document existing arefacts and their status (heritage documentation) or to represent a reconstruction of their assumed status in the past (virtual reconstruction). 3D models may be created using various techniques, producing a variety of model types and file formats. For the models produced with any of the techniques described below, the model quality is measured by its resolution (the minimum distance of two points on the target to be recognized as distinct), accuracy (how close the measurement is to its true value) and precision (how close different measurements of the same target are to each other).
@@ -40,7 +33,7 @@ Laser Scanning is the process of recording three-dimensional information about r
 ==== Structured Light
 Structured Light is a method of 3D capture that relies on the distortion of projected light to calculate surface form. A known pattern (often a grid or horizontal lines) of light when projected onto a surface appears distorted from perspectives other than that of the projector and observation of this distortion can be used for geometric reconstruction of the surface shape. The mesh output from this technique may be enhanced by colour information at points/vertices (i.e., vertex colour) or an associated 2D image representing surface colour, which is mapped to the mesh (texture map).
 
-The three methods produce substantially similar 3D models. The choice of one of them depends on the object to be scanned, on its position (e.g. for the roof of a building, laser scanning can be difficult) and on the availability of the capture device. Using any of the above techniques there may exist parts of the object to be scanned which are not visible, e.g. undercuts. These have to be completed by hand drawing.
+The three methods produce substantially similar 3D models. The choice of one of them depends on the object to be scanned, on its position (e.g. for the roof of a building laser scanning can be difficult) and on the availability of the capture device. Using any of the above techniques there may exist parts of the object to be scanned which are not visible, e.g. undercuts. These have to be completed by hand drawing.
 
 ==== CAD-based modelling
 In Computer Aided Design (CAD) modelling, 3D models are built using 3D CAD systems by defining vertices, edges and faces. Curves may further be defined with various methods, e.g. as splines. The model may also incorporate information about the corresponding parts of the object. In the specialied case of construction design, the technique takes the name of BIM (Building Information Modelling) where additional information is organized according to the IFC (Industry Foundation Classes) standard. If this standard is extended to include information that is relevant for cultural heritage the approach takes the name of HBIM (Heritage BIM).
@@ -55,7 +48,7 @@ The Geophysical Information System (GIS) modelling technique is used to generate
 Procedural Modelling produces models generated by the application of a mathematical model that generates the model components. It is very rarely used for heritage documentation but may be used for reconstructions, especially to produce films. It enables the fast production of large models, e.g. a whole town with its inhabitants.
 
 ==== 180° Panoramas
-180° Panoramas consist of a 180° circular photographs and are typically used for interiors. Although they are not proper 3D models, their use is similar. Relevant parameters are the same as those of photographs.
+180° Panoramas consist of a 180° circular photographs and are typically used for interiors. Although they are not proper 3D models, their use is similar. Relevant parameters are the same as those for photographs.
 
 === Sources of 3D models
 3D models may be created by direct automatic acquisition, CAD, based on measures of the object to be modelled, bibliography and source-based modelling. The latter is a method of model production based on documents, reference photographs, or other sources of information about the present shape of a real-world object or place or about a  past one. They are mainly created as CAD-based models, or  more rarely using other digital design techniques (e.g. 3D sculpture).
@@ -64,11 +57,11 @@ Procedural Modelling produces models generated by the application of a mathemati
 The 3D model data sets extend beyond that which simply defines the model geometry (the model). Such data can correlate to the model but also to the conditions of the whole production process and to its intended use. This additional data can determine the suitability and quality of the model for its intended use. Such additional data can include: 
 
 ==== Metadata
-In addition to the metadata requirements of an information package as described in the  common specification (CSIP) and categories of metadata typically found in archival systems (descriptive, structural, administrative, provenance, technical and preservation) there may be additional  metadata requirements for models concerning the tools used for the digitization, information about the hardware and software used for the acquisition or creation of the model and metadata that forms part of the data model itself (model metadata). Information can also be recorded concerning the resolution, accuracy, and precision of the digitization process. 
+In addition to the metadata requirements of an information package as described in the  common specification (CSIP) and categories of metadata typically found in archival systems (descriptive, structural, administrative, provenance, technical and preservation) there may be additional  metadata requirements for models concerning the tools used for the digitisation, information about the hardware and software used for the acquisition or creation of the model and metadata that forms part of the data model itself (model metadata). Information can also be recorded concerning the resolution, accuracy, and precision of the digitisation process. 
 Metadata is by definition structured data which can be serialised by a variety of methods (xml, json, rdf, turtle etc) and defined by a standardised or localised schema.
 
 ==== Paradata
-Paradata concerns the conditions under which the digitization or model creation took place (who did it, where, what were the environmental conditions, what was the equipment used), the intended purpose of the model (documentation, research, communication), rationales for decisions taken in the digitization process leading to the final result, and for reconstructions, references to the documentation supporting the model creation process (images, drawings, reports, archaeological/historical interpretation).
+Paradata concerns the conditions under which the digitisation or model creation took place (who did it, where, what were the environmental conditions, what was the equipment used), the intended purpose of the model (documentation, research, communication), rationales for decisions taken in the digitisation process leading to the final result, and for reconstructions, references to the documentation supporting the model creation process (images, drawings, reports, archaeological/historical interpretation).
 
 Standards do not exist for the content, structure or semantic description of Paradata although much academic work has been done on describing best practice for its acquisition and recording. Paradata is mainly realised as unstructured text.
 
@@ -79,7 +72,7 @@ Geometry information is directly associated with the model and is generated as a
 Processing information includes information about the processes used to produce any intermediate and the final data model. For example the software used, the interpolation type used for meshing, the standards used (if any) for the production of geometry data and so on. Prcessing information is  typically detailed textual (unstructured) data, but could be encoded to a defined schema.
 
 ==== Quality and Authentication information
-Quality information can be expressed as estimated resolution, accuracy and precision, and suitability for the models intended purpose. Authentication information can include model validation rules and results (is the model a good representation of the original) and verification quality rules and results (is the model within defined quality rules). Authentication information can also include Digital Signatures that guarantee the quality/authenticity of the model at the time it is archived. Quality and authentication information can be unstructured or structured data and can include recording of events within preservation metadata. More information on Authentication can be found in the CITS 3D PM Guideline at: https://dilcis.eu/content-types/cits-3d-product-model-data.
+Quality information can be expressed as estimated resolution, accuracy and precision, and suitability for the models intended purpose. Authentication information can include model validation rules and results (is the model a good representation of the original) and verification quality rules and results (is the model within defined quality rules). Authentication information can also include Digital Signatures that guarantee the quality/authenticity of the model at the time it is archived. Quality and authentication information can be unstructured or structured data and can include recording of events within preservation metadata. More information on Authentication can be found in the CITS 3DPM Guideline at: https://dilcis.eu/content-types/cits-3d-product-model-data.
 
 === File Formats
 3D file formats contain data representing the model type and the necessary information for its display. Use of file formats that offer the best long-term prospects in terms of usability, accessibility, and sustainability is recommended and is generally achieved  with formats that have wide usage, have open specifications, and are independent of specific software or developers. In practice it is not always possible to meet all three criteria above, and a balance has to be found. Open file formats are available, and there may be options to convert proprietary file formats to them; but there is risk which should be assessed for information loss in the transformation. Keeping original, proprietary formats is not ideal, but with the risk of loss of information in transforming file formats, the inclusion of original and format derivations in archival packages is recommended. 
@@ -92,15 +85,14 @@ Interoperability is key. The European Commission has compiled a comprehensive li
 
 === Layered Data Model
 
-This section introduces the role of the CITS 3D HM and its dependencies on the basic structures of the Information Package.
+This section introduces the role of the CITS 3DHM and its dependencies on the basic structures of the Information Package.
 
 [example]
 This specification is created based on the requirements of the Common Specification for Information Packages (CSIP),  the specification for Submission Information Packages (E-ARK SIP) and the specification for Archival Information Packages (E-ARK AIP). To fully understand its requirements, we highly recommend that users review the requirements and the terminology of the source documents, before using this specification.
 
-The data model structure is based on a layered approach for information package definitions <<_figure_2>>. The Common Specification for Information Packages (CSIP) forms the outermost layer. The general SIP, AIP and DIP specifications add respectively, submission, archiving and dissemination information to the CSIP specification. The third layer of the model represents specific content information type specifications, such as this 3D Heritage Model specification. Additional layers for business-specific specifications and local variant implementations of any specification can be added to suit the needs of the organisation.
+The data model structure is based on a layered approach for information package definitions (Figure 2). The Common Specification for Information Packages (CSIP) forms the outermost layer. The general SIP, AIP and DIP specifications add respectively, submission, archiving and dissemination information to the CSIP specification. The third layer of the model represents specific content information type specifications, such as this 3D Heritage Model specification. Additional layers for business-specific specifications and local variant implementations of any specification can be added to suit the needs of the organisation.
 
-[[_figure_2]]
-.Figure 2: Data Model Structure
+.Data Model Structure
 image::fig_2_data_model_structure.svg[]
 
 Every level in the data model structure inherits metadata entities and elements from the higher levels. In order to increase adoption, a flexible schema has been developed. This will allow for extension points where the schema in each layer can be extended to accommodate additional information on the next specific layer until, finally, the local implementation can add specific entities or metadata elements to satisfy specific local needs. Extension points can be implemented by:
@@ -135,7 +127,7 @@ From the CSIP and Common Specification for Preservation Metadata (CSPM):
 * Detailed Rights information should be included in PREMIS. High-level Rights information in METS indicates restrictions. Detailed, object-specific Rights information should be included in the PREMIS metadata,
 * File format information for all files should be included as Persistent Unique Identifier (PUID) values in the appropriate PREMIS semantic units.
 
-Desirable technical and preservation metadata in the context of the 3D HM CITS can include:
+Desirable technical and preservation metadata in the context of the 3DHM CITS can include:
 
 * Reference to the content information standard (e.g. STEP-IFC),
 * Information about the generating system (Creating Agent software),
@@ -179,17 +171,16 @@ The use cases for creation of 3D Heritage Models are wide ranging, but the use c
 == Implementation
 
 === Package Structure 
-The CITS 3D HM inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in <<_figure_3>>. It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and Representation level but otherwise the structure is identical. 
+The CITS 3DHM inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in (Figure 3). It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and Representation level but otherwise the structure is identical. 
 
-[[_figure_3]]
-.Figure 3: Example Information Package Folder Structure
+.Example Information Package Folder Structure
 image::fig_3_package_structure.svg[]
 
 Multiple formats of the same 3D model which have been created through transformation events may be included in a single package and held in individual Representations (for example proprietary BIM models and STEP-IFC derivations). Information related to a transformation event (software used, parameters etc) should be included in the relevant documentation/paradata folder and details of the event recorded in PREMIS. 
 
 3D models of the same physical object can be created via different means (e.g scanning  vs photogrammetry) and it is a matter for the repository to determine if it considers these models to be the same or a different intellectual entity and thus whether they should be in the same or different information packages. Should models created via different methods be included in the same package then Rights information and Paradata may differ for each model and should therefore be held at Representation level. Submission Agreements between Producer and Archive should detail whether different capture/creation versions of the same physical object are permitted in a single information package.
 
-It is strongly recommended that as much documentation as possible related to the creation, context, provenance and terms of use of the model is included in the information package such as for example: licence terms, project overview, model creation environment and transformation information. The CITS 3D HM recommends the inclusion of such information related to the production of the model in a documentation/paradata sub-folder and related to archiving and use of the model in a documentation/other sub-folder. If model Authentication information (such as data quality rules) is included with the model then this can also be included in the optional documentation/authentication folder. Further information on model Authentication can be found in the CITS 3D PM at: https://dilcis.eu/content-types/cits-3d-product-model-data. The inclusion of a Submission Agreement in the information package is recommended and should be located in the documentation/other sub-folder.
+It is strongly recommended that as much documentation as possible related to the creation, context, provenance and terms of use of the model is included in the information package such as for example: licence terms, project overview, model creation environment and transformation information. The CITS 3DHM recommends the inclusion of such information related to the production of the model in a documentation/paradata sub-folder and related to archiving and use of the model in a documentation/other sub-folder. If model Authentication information (such as data quality rules) is included with the model then this can also be included in the optional documentation/authentication folder. Further information on model Authentication can be found in the CITS 3DPM at: https://dilcis.eu/content-types/cits-3d-product-model-data. The inclusion of a Submission Agreement in the information package is recommended and should be located in the documentation/other sub-folder.
 
 Individual folder structures are recommended within each representation/data folder to provide structure appropriate to the model format used. 
 
@@ -215,13 +206,13 @@ According to the CSPM: “When using preservation metadata together with the Com
 
 It is recommended that users review the CSPM.
 
-CITS 3D HM recommends the inclusion of PREMIS files at Representation level to include  provenance, rendering environment, origination information and if it exists Authentication information.
+CITS 3DHM recommends the inclusion of PREMIS files at Representation level to include  provenance, rendering environment, origination information and if it exists Authentication information.
 
 ==== Rights Metadata
 Detailed Rights information should be recorded within PREMIS. As such a PREMIS file should be included at either package or in each Representation to contain this. 
 
 ==== Paradata
-Paradata is defined as supporting textual material which concerns the conditions under which the model digitization (creation) took place, (who did it, where, what were the environmental conditions), the intended purpose of the model (documentation, research, communication), the reasons of decisions taken in the digitization process leading to the final result, and for reconstructions, the references to the documentation supporting the reconstruction (images, drawings, reports, archaeological/historical interpretation).
+Paradata is defined as supporting textual material which concerns the conditions under which the model digitisation (creation) took place, (who did it, where, what were the environmental conditions), the intended purpose of the model (documentation, research, communication), the reasons of decisions taken in the digitisation process leading to the final result, and for reconstructions, the references to the documentation supporting the reconstruction (images, drawings, reports, archaeological/historical interpretation).
 
 Standards do not exist for the recording of Paradata but considerable work has been done in recommending best practice in the documentation of the process of creation of 3D models. It is hoped that in future standards may be developed for the structuring and semantic description of Paradata that can be used in this CITS.
 
@@ -234,7 +225,7 @@ Details of the hardware and software used in the creation and transformation and
 Quality information may be included in some specialised metadata schemas or if unstructured can be included in the documentation/paradata folder of each representation.
 
 ==== Authentication Information
-If Authentication documentation exists then the optional documentation/authentication subfolder can be used at both root and representation level. Authentication events can be recorded within PREMIS and examples are given in the CITS 3D PM specification and guideline as to how this can be done (see https://dilcis.eu/content-types/cits-3d-product-model-data).
+If Authentication documentation exists then the optional documentation/authentication subfolder can be used at both root and representation level. Authentication events can be recorded within PREMIS and examples are given in the CITS 3DPM specification and guideline as to how this can be done (see https://dilcis.eu/content-types/cits-3d-product-model-data).
 
 ==== Processing Information
 Processing information unless specifically encoded according to specialised schemas or ontologies can be included in the documentation/paradata sub-folder either at root or Representation level.
@@ -247,9 +238,9 @@ Geometry data is closely aligned with the data model itself and should be includ
 ==== METS
 The main requirement for METS files in a CSIP Information Package is that they follow the official METS Schema version 1.12 http://www.loc.gov/standards/mets/mets-schemadocs.html (used by CSIP version 2.2) and the extension schema developed for  CSIP and published by the DILCIS Board. As new versions of METS Schema become available the DILCIS Board will evaluate these and, if necessary, update the CSIP.
 
-The METS specification requires a METS profile document which describes the use of METS and the METS elements. All the requirements described in this specification are also expressed with METS profiles for the CITS 3D HM root and representation METS which can be found at: https://github.com/DILCISBoard/CITS-3D HM/tree/rel/v1.0.0.
+The METS specification requires a METS profile document which describes the use of METS and the METS elements. All the requirements described in this specification are also expressed with METS profiles for the CITS 3DHM root and representation METS which can be found at: https://github.com/DILCISBoard/CITS-3DHM/tree/rel/v1.0.0.
 
-CSIP specifies that METS files be located at the root of the package folder structure (Root METS) and optionally in each of the Representations within its respective root folder (Representation METS). CITS 3D HM has a requirement to contain at least one Representation and so will contain at minimum a root METS and a Representation METS file. 
+CSIP specifies that METS files be located at the root of the package folder structure (Root METS) and optionally in each of the Representations within its respective root folder (Representation METS). CITS 3DHM has a requirement to contain at least one Representation and so will contain at minimum a root METS and a Representation METS file. 
 
 ==== PREMIS
 From the EARK Common Specification for Preservation Metadata:
@@ -268,7 +259,7 @@ Further, to enhance the interoperability of the CSIP and to strengthen the manag
 * Detailed rights information should be included in PREMIS. High-level rights information in METS indicates restrictions. Detailed, object-specific rights information will be included in the PREMIS metadata,
 * File format information for all files should be included as Persistent Unique Identifier (PUID) values in the appropriate PREMIS semantic units.
 
-Desirable technical and preservation metadata in the context of the 3D HM CITS can include:
+Desirable technical and preservation metadata in the context of the 3DHM CITS can include:
 
 * Reference to the content information standard (e.g. STEP-IFC),
 * Information about the generating system (Creating Agent software),
@@ -277,7 +268,7 @@ Desirable technical and preservation metadata in the context of the 3D HM CITS c
 * Software, hardware, individual and organisational agents,
 * Rights statements including: copyright, licenses and access restrictions.
 
-The use of PREMIS within the 3D HM CITS requires that information packages also conform to the CSPM (use of PREMIS is not mandatory within CSIP, but is a SHOULD requirement in CITS 3D HM). If used, the following PREMIS semantic units should be considered:
+The use of PREMIS within the 3DHM CITS requires that information packages also conform to the CSPM (use of PREMIS is not mandatory within CSIP, but is a SHOULD requirement in CITS 3DHM). If used, the following PREMIS semantic units should be considered:
 
 [cols="1,1"]
 |===

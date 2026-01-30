@@ -3,7 +3,7 @@
 Stephen Mackey
 :revnumber: v${1.0.0}
 :revdate: ${RELEASE_DATE}
-:revremark: Firet publication
+:revremark: First publication
 :doctype: book
 :imagesdir: figs
 :source-highlighter: rouge
@@ -52,7 +52,7 @@ include::representation_mets_structural_map.adoc[]
 include::tables/metadata-rep-structmap-requirements.adoc[]
 include::premis.adoc[]
 
-// Back matter - disable nuumbering for glosary but keep for apprendices
+// Back matter - disable nuumbering for glossary but keep for appendices
 :!sectnums:
 include::glossary.adoc[]
 // Appendices - special numbering
