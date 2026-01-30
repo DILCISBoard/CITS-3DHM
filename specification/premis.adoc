@@ -1,7 +1,7 @@
 === PREMIS
 
-==== Use of PREMIS in CITS 3D HM
-The use of PREMIS within the CITS 3D HM must follow the requirements of the CSPM which can be found at: https://dilcis.eu/content-types/cits-premis. 
+==== Use of PREMIS in CITS 3DHM
+The use of PREMIS within the CITS 3DHM must follow the requirements of the CSPM which can be found at: https://dilcis.eu/content-types/cits-premis. 
 
 Some PREMIS semantic units take the form of containers which comprise multiple sub (or even sub-sub) semantic units. Sub or sub-sub semantic units are not detailed in this specification if the container above has a level of MAY. Use of semantic units not listed should follow the requirements of the PREMIS data dictionary including the level (obligation). From the principles above:
 
@@ -9,13 +9,13 @@ Some PREMIS semantic units take the form of containers which comprise multiple s
 
 **3D HM7**: there SHOULD be (a) PREMIS file(s) produced according to CSPM and conforming to the adjusted requirements of this CITS in each Representation of the Information Package in the representation/metadata/preservation folder.
 
-Following CSPM the CITS 3D HM follows the requirements and recommendation of the PREMIS Data Dictionary which can be found at: https://www.loc.gov/standards/premis/v3/premis-3-0-final.pdf.
+Following CSPM the CITS 3DHM follows the requirements and recommendation of the PREMIS Data Dictionary which can be found at: https://www.loc.gov/standards/premis/v3/premis-3-0-final.pdf.
 
 ==== Attribute values and controlled vocabularies
 Use of controlled vocabularies for the values of semantic units is encouraged within the PREMIS Data Dictionary and through best practice. Specific controlled vocabularies for semantic units are not provided by the CITS but their use is encouraged. If local vocabularies are used within the repository, then these should be included within each package.
 
 ==== Use of PREMIS at package level
-PREMIS can be used in addition to METS at package level to record preservation, rights and relationship metadata. Note that if PREMIS is used then the requirements of the CSPM apply and those provided by the CITS 3D HM are in addition to these.
+PREMIS can be used in addition to METS at package level to record preservation, rights and relationship metadata. Note that if PREMIS is used then the requirements of the CSPM apply and those provided by the CITS 3DHM are in addition to these.
 
 **3D HM65**: Preservation information for the entire package (e.g. provenance, preservation actions) MAY be recorded within a PREMIS file located in the metadata/preservation folder and must follow Guidelines set out in CSPM. 
 
@@ -24,7 +24,7 @@ PREMIS can be used in addition to METS at package level to record preservation, 
 **3D HM67**: Relationship information related to the intellectual entity subject of the package (the cultural heritage object) to other information (documents, information packages, web links) MAY be recorded within a PREMIS file located in the metadata/preservation folder using the PREMIS Relationship semantic unit, following the Guidelines set out in CSPM and using values for semantic components taken from a controlled vocabulary.
 
 ==== Use of PREMIS at Representation level
-PREMIS can be used in addition to METS at Representation level to record preservation and rights metadata. Preservation information can include details of the object creating application via the creatingApplication semantic container and the required rendering environment via the Environment entity. Note that if PREMIS is used then the requirements of the CSPM apply and those provided by the CITS 3D HM are in addition to these.
+PREMIS can be used in addition to METS at Representation level to record preservation and rights metadata. Preservation information can include details of the object creating application via the creatingApplication semantic container and the required rendering environment via the Environment entity. Note that if PREMIS is used then the requirements of the CSPM apply and those provided by the CITS 3DHM are in addition to these.
 
 **3D HM68**: Preservation information for each Representation (e.g. provenance, preservation actions, creating application, rendering environment) MAY be recorded within a PREMIS file located in the representation/metadata/preservation folder and must follow Guidelines set out in CSPM. 
 
