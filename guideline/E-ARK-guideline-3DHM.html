@@ -499,13 +499,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_purpose">1.1. Purpose</h3>
 <div class="paragraph">
-<p>The purpose of this document is to describe the Content Information Type Specification for 3D Heritage Model data (CITS 3D HM). The specification is designed to be used for the transfer to archives as well as for records exchange between different organisations and repositories. This specification is supported by METS profiles for the Root and Representation METS files, an example package and a Guideline document.</p>
+<p>The purpose of this document is to describe the Content Information Type Specification for 3D Heritage Model data (CITS 3DHM). The specification is designed to be used for the transfer to archives as well as for records exchange between different organisations and repositories. This specification is supported by METS profiles for the Root and Representation METS files, an example package and a Guideline document.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_scope">1.2. Scope</h3>
 <div class="paragraph">
-<p>Use of 3D data is widespread across many domains, with a plethora of applications and data formats. This 3D HM content specification limits its scope to the area of 3D models of cultural heritage artefacts, buildings and sites that have been produced as:</p>
+<p>Use of 3D data is widespread across many domains, with a plethora of applications and data formats. This 3DHM content specification limits its scope to the area of 3D models of cultural heritage artefacts, buildings and sites that have been produced as:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -527,7 +527,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>The scope of the CITS may evolve in future to accommodate other production technologies. The CITS 3D HM has a related specification for 3D Product Model data, CITS 3D PM which can be found at: <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>.</p>
+<p>The scope of the CITS may evolve in future to accommodate other production technologies. The CITS 3DHM has a related specification for 3D Product Model data, CITS 3DPM which can be found at: <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -562,7 +562,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Structured Light is a method of 3D capture that relies on the distortion of projected light to calculate surface form. A known pattern (often a grid or horizontal lines) of light when projected onto a surface appears distorted from perspectives other than that of the projector and observation of this distortion can be used for geometric reconstruction of the surface shape. The mesh output from this technique may be enhanced by colour information at points/vertices (i.e., vertex colour) or an associated 2D image representing surface colour, which is mapped to the mesh (texture map).</p>
 </div>
 <div class="paragraph">
-<p>The three methods produce substantially similar 3D models. The choice of one of them depends on the object to be scanned, on its position (e.g. for the roof of a building, laser scanning can be difficult) and on the availability of the capture device. Using any of the above techniques there may exist parts of the object to be scanned which are not visible, e.g. undercuts. These have to be completed by hand drawing.</p>
+<p>The three methods produce substantially similar 3D models. The choice of one of them depends on the object to be scanned, on its position (e.g. for the roof of a building laser scanning can be difficult) and on the availability of the capture device. Using any of the above techniques there may exist parts of the object to be scanned which are not visible, e.g. undercuts. These have to be completed by hand drawing.</p>
 </div>
 </div>
 <div class="sect3">
@@ -592,7 +592,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_180_panoramas">1.3.9. 180° Panoramas</h4>
 <div class="paragraph">
-<p>180° Panoramas consist of a 180° circular photographs and are typically used for interiors. Although they are not proper 3D models, their use is similar. Relevant parameters are the same as those of photographs.</p>
+<p>180° Panoramas consist of a 180° circular photographs and are typically used for interiors. Although they are not proper 3D models, their use is similar. Relevant parameters are the same as those for photographs.</p>
 </div>
 </div>
 </div>
@@ -610,14 +610,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_metadata">1.5.1. Metadata</h4>
 <div class="paragraph">
-<p>In addition to the metadata requirements of an information package as described in the  common specification (CSIP) and categories of metadata typically found in archival systems (descriptive, structural, administrative, provenance, technical and preservation) there may be additional  metadata requirements for models concerning the tools used for the digitization, information about the hardware and software used for the acquisition or creation of the model and metadata that forms part of the data model itself (model metadata). Information can also be recorded concerning the resolution, accuracy, and precision of the digitization process.
+<p>In addition to the metadata requirements of an information package as described in the  common specification (CSIP) and categories of metadata typically found in archival systems (descriptive, structural, administrative, provenance, technical and preservation) there may be additional  metadata requirements for models concerning the tools used for the digitisation, information about the hardware and software used for the acquisition or creation of the model and metadata that forms part of the data model itself (model metadata). Information can also be recorded concerning the resolution, accuracy, and precision of the digitisation process.
 Metadata is by definition structured data which can be serialised by a variety of methods (xml, json, rdf, turtle etc) and defined by a standardised or localised schema.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_paradata">1.5.2. Paradata</h4>
 <div class="paragraph">
-<p>Paradata concerns the conditions under which the digitization or model creation took place (who did it, where, what were the environmental conditions, what was the equipment used), the intended purpose of the model (documentation, research, communication), rationales for decisions taken in the digitization process leading to the final result, and for reconstructions, references to the documentation supporting the model creation process (images, drawings, reports, archaeological/historical interpretation).</p>
+<p>Paradata concerns the conditions under which the digitisation or model creation took place (who did it, where, what were the environmental conditions, what was the equipment used), the intended purpose of the model (documentation, research, communication), rationales for decisions taken in the digitisation process leading to the final result, and for reconstructions, references to the documentation supporting the model creation process (images, drawings, reports, archaeological/historical interpretation).</p>
 </div>
 <div class="paragraph">
 <p>Standards do not exist for the content, structure or semantic description of Paradata although much academic work has been done on describing best practice for its acquisition and recording. Paradata is mainly realised as unstructured text.</p>
@@ -638,7 +638,7 @@ Metadata is by definition structured data which can be serialised by a variety o
 <div class="sect3">
 <h4 id="_quality_and_authentication_information">1.5.5. Quality and Authentication information</h4>
 <div class="paragraph">
-<p>Quality information can be expressed as estimated resolution, accuracy and precision, and suitability for the models intended purpose. Authentication information can include model validation rules and results (is the model a good representation of the original) and verification quality rules and results (is the model within defined quality rules). Authentication information can also include Digital Signatures that guarantee the quality/authenticity of the model at the time it is archived. Quality and authentication information can be unstructured or structured data and can include recording of events within preservation metadata. More information on Authentication can be found in the CITS 3D PM Guideline at: <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>.</p>
+<p>Quality information can be expressed as estimated resolution, accuracy and precision, and suitability for the models intended purpose. Authentication information can include model validation rules and results (is the model a good representation of the original) and verification quality rules and results (is the model within defined quality rules). Authentication information can also include Digital Signatures that guarantee the quality/authenticity of the model at the time it is archived. Quality and authentication information can be unstructured or structured data and can include recording of events within preservation metadata. More information on Authentication can be found in the CITS 3DPM Guideline at: <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>.</p>
 </div>
 </div>
 </div>
@@ -660,7 +660,7 @@ Metadata is by definition structured data which can be serialised by a variety o
 <div class="sect2">
 <h3 id="_layered_data_model">1.7. Layered Data Model</h3>
 <div class="paragraph">
-<p>This section introduces the role of the CITS 3D HM and its dependencies on the basic structures of the Information Package.</p>
+<p>This section introduces the role of the CITS 3DHM and its dependencies on the basic structures of the Information Package.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -668,7 +668,7 @@ This specification is created based on the requirements of the Common Specificat
 </div>
 </div>
 <div class="paragraph">
-<p>The data model structure is based on a layered approach for information package definitions <a href="#_figure_2">[_figure_2]</a>. The Common Specification for Information Packages (CSIP) forms the outermost layer. The general SIP, AIP and DIP specifications add respectively, submission, archiving and dissemination information to the CSIP specification. The third layer of the model represents specific content information type specifications, such as this 3D Heritage Model specification. Additional layers for business-specific specifications and local variant implementations of any specification can be added to suit the needs of the organisation.</p>
+<p>The data model structure is based on a layered approach for information package definitions (Figure 2). The Common Specification for Information Packages (CSIP) forms the outermost layer. The general SIP, AIP and DIP specifications add respectively, submission, archiving and dissemination information to the CSIP specification. The third layer of the model represents specific content information type specifications, such as this 3D Heritage Model specification. Additional layers for business-specific specifications and local variant implementations of any specification can be added to suit the needs of the organisation.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -753,7 +753,7 @@ This specification is created based on the requirements of the Common Specificat
 </ul>
 </div>
 <div class="paragraph">
-<p>Desirable technical and preservation metadata in the context of the 3D HM CITS can include:</p>
+<p>Desirable technical and preservation metadata in the context of the 3DHM CITS can include:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -854,7 +854,7 @@ This specification is created based on the requirements of the Common Specificat
 <div class="sect2">
 <h3 id="_package_structure">3.1. Package Structure</h3>
 <div class="paragraph">
-<p>The CITS 3D HM inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in <a href="#_figure_3">[_figure_3]</a>. It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and Representation level but otherwise the structure is identical.</p>
+<p>The CITS 3DHM inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in (Figure 3). It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and Representation level but otherwise the structure is identical.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -869,7 +869,7 @@ This specification is created based on the requirements of the Common Specificat
 <p>3D models of the same physical object can be created via different means (e.g scanning  vs photogrammetry) and it is a matter for the repository to determine if it considers these models to be the same or a different intellectual entity and thus whether they should be in the same or different information packages. Should models created via different methods be included in the same package then Rights information and Paradata may differ for each model and should therefore be held at Representation level. Submission Agreements between Producer and Archive should detail whether different capture/creation versions of the same physical object are permitted in a single information package.</p>
 </div>
 <div class="paragraph">
-<p>It is strongly recommended that as much documentation as possible related to the creation, context, provenance and terms of use of the model is included in the information package such as for example: licence terms, project overview, model creation environment and transformation information. The CITS 3D HM recommends the inclusion of such information related to the production of the model in a documentation/paradata sub-folder and related to archiving and use of the model in a documentation/other sub-folder. If model Authentication information (such as data quality rules) is included with the model then this can also be included in the optional documentation/authentication folder. Further information on model Authentication can be found in the CITS 3D PM at: <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>. The inclusion of a Submission Agreement in the information package is recommended and should be located in the documentation/other sub-folder.</p>
+<p>It is strongly recommended that as much documentation as possible related to the creation, context, provenance and terms of use of the model is included in the information package such as for example: licence terms, project overview, model creation environment and transformation information. The CITS 3DHM recommends the inclusion of such information related to the production of the model in a documentation/paradata sub-folder and related to archiving and use of the model in a documentation/other sub-folder. If model Authentication information (such as data quality rules) is included with the model then this can also be included in the optional documentation/authentication folder. Further information on model Authentication can be found in the CITS 3DPM at: <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>. The inclusion of a Submission Agreement in the information package is recommended and should be located in the documentation/other sub-folder.</p>
 </div>
 <div class="paragraph">
 <p>Individual folder structures are recommended within each representation/data folder to provide structure appropriate to the model format used.</p>
@@ -924,7 +924,7 @@ This specification is created based on the requirements of the Common Specificat
 <p>It is recommended that users review the CSPM.</p>
 </div>
 <div class="paragraph">
-<p>CITS 3D HM recommends the inclusion of PREMIS files at Representation level to include  provenance, rendering environment, origination information and if it exists Authentication information.</p>
+<p>CITS 3DHM recommends the inclusion of PREMIS files at Representation level to include  provenance, rendering environment, origination information and if it exists Authentication information.</p>
 </div>
 </div>
 <div class="sect3">
@@ -936,7 +936,7 @@ This specification is created based on the requirements of the Common Specificat
 <div class="sect3">
 <h4 id="_paradata_2">3.2.4. Paradata</h4>
 <div class="paragraph">
-<p>Paradata is defined as supporting textual material which concerns the conditions under which the model digitization (creation) took place, (who did it, where, what were the environmental conditions), the intended purpose of the model (documentation, research, communication), the reasons of decisions taken in the digitization process leading to the final result, and for reconstructions, the references to the documentation supporting the reconstruction (images, drawings, reports, archaeological/historical interpretation).</p>
+<p>Paradata is defined as supporting textual material which concerns the conditions under which the model digitisation (creation) took place, (who did it, where, what were the environmental conditions), the intended purpose of the model (documentation, research, communication), the reasons of decisions taken in the digitisation process leading to the final result, and for reconstructions, the references to the documentation supporting the reconstruction (images, drawings, reports, archaeological/historical interpretation).</p>
 </div>
 <div class="paragraph">
 <p>Standards do not exist for the recording of Paradata but considerable work has been done in recommending best practice in the documentation of the process of creation of 3D models. It is hoped that in future standards may be developed for the structuring and semantic description of Paradata that can be used in this CITS.</p>
@@ -960,7 +960,7 @@ This specification is created based on the requirements of the Common Specificat
 <div class="sect3">
 <h4 id="_authentication_information">3.2.7. Authentication Information</h4>
 <div class="paragraph">
-<p>If Authentication documentation exists then the optional documentation/authentication subfolder can be used at both root and representation level. Authentication events can be recorded within PREMIS and examples are given in the CITS 3D PM specification and guideline as to how this can be done (see <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>).</p>
+<p>If Authentication documentation exists then the optional documentation/authentication subfolder can be used at both root and representation level. Authentication events can be recorded within PREMIS and examples are given in the CITS 3DPM specification and guideline as to how this can be done (see <a href="https://dilcis.eu/content-types/cits-3d-product-model-data" class="bare">https://dilcis.eu/content-types/cits-3d-product-model-data</a>).</p>
 </div>
 </div>
 <div class="sect3">
@@ -984,10 +984,10 @@ This specification is created based on the requirements of the Common Specificat
 <p>The main requirement for METS files in a CSIP Information Package is that they follow the official METS Schema version 1.12 <a href="http://www.loc.gov/standards/mets/mets-schemadocs.html" class="bare">http://www.loc.gov/standards/mets/mets-schemadocs.html</a> (used by CSIP version 2.2) and the extension schema developed for  CSIP and published by the DILCIS Board. As new versions of METS Schema become available the DILCIS Board will evaluate these and, if necessary, update the CSIP.</p>
 </div>
 <div class="paragraph">
-<p>The METS specification requires a METS profile document which describes the use of METS and the METS elements. All the requirements described in this specification are also expressed with METS profiles for the CITS 3D HM root and representation METS which can be found at: <a href="https://github.com/DILCISBoard/CITS-3D" class="bare">https://github.com/DILCISBoard/CITS-3D</a> HM/tree/rel/v1.0.0.</p>
+<p>The METS specification requires a METS profile document which describes the use of METS and the METS elements. All the requirements described in this specification are also expressed with METS profiles for the CITS 3DHM root and representation METS which can be found at: <a href="https://github.com/DILCISBoard/CITS-3DHM/tree/rel/v1.0.0" class="bare">https://github.com/DILCISBoard/CITS-3DHM/tree/rel/v1.0.0</a>.</p>
 </div>
 <div class="paragraph">
-<p>CSIP specifies that METS files be located at the root of the package folder structure (Root METS) and optionally in each of the Representations within its respective root folder (Representation METS). CITS 3D HM has a requirement to contain at least one Representation and so will contain at minimum a root METS and a Representation METS file.</p>
+<p>CSIP specifies that METS files be located at the root of the package folder structure (Root METS) and optionally in each of the Representations within its respective root folder (Representation METS). CITS 3DHM has a requirement to contain at least one Representation and so will contain at minimum a root METS and a Representation METS file.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1034,7 +1034,7 @@ This specification is created based on the requirements of the Common Specificat
 </ul>
 </div>
 <div class="paragraph">
-<p>Desirable technical and preservation metadata in the context of the 3D HM CITS can include:</p>
+<p>Desirable technical and preservation metadata in the context of the 3DHM CITS can include:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1059,7 +1059,7 @@ This specification is created based on the requirements of the Common Specificat
 </ul>
 </div>
 <div class="paragraph">
-<p>The use of PREMIS within the 3D HM CITS requires that information packages also conform to the CSPM (use of PREMIS is not mandatory within CSIP, but is a SHOULD requirement in CITS 3D HM). If used, the following PREMIS semantic units should be considered:</p>
+<p>The use of PREMIS within the 3DHM CITS requires that information packages also conform to the CSPM (use of PREMIS is not mandatory within CSIP, but is a SHOULD requirement in CITS 3DHM). If used, the following PREMIS semantic units should be considered:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
