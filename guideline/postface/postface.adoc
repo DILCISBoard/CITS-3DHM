@@ -1,10 +1,10 @@
 = Postface
-:figure-caption!:
-:sectnums:
 
 include::authors.adoc[]
+include::reviewers.adoc[]
 include::revisions.adoc[]
-include::ack-contact.adoc[]
+include::acknowledgements.adoc[]
+include::contacts.adoc[]
 
 
 
