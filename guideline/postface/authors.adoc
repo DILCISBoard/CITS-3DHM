@@ -1,9 +1,9 @@
 == Authors
 
-[cols="1,1,1"]
+[cols="1,1"]
 |===
-| Name | Organisation
-| Stephen Mackey |
-| Penwern Limited | 
-|===    
+| Name | Organisation 
+| Stephen Mackey 
+| Penwern Limited
+|===   
      
