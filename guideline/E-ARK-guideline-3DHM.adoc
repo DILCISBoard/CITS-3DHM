@@ -5,7 +5,6 @@ Stephen Mackey
 :revdate: ${RELEASE_DATE}
 :revremark: First publication
 :doctype: book
-:imagesdir: figs
 :source-highlighter: rouge
 :rouge-style: github
 :org: Penwern Limited
