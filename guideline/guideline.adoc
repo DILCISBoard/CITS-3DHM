@@ -93,7 +93,7 @@ This specification is created based on the requirements of the Common Specificat
 The data model structure is based on a layered approach for information package definitions (Figure 2). The Common Specification for Information Packages (CSIP) forms the outermost layer. The general SIP, AIP and DIP specifications add respectively, submission, archiving and dissemination information to the CSIP specification. The third layer of the model represents specific content information type specifications, such as this 3D Heritage Model specification. Additional layers for business-specific specifications and local variant implementations of any specification can be added to suit the needs of the organisation.
 
 .Data Model Structure
-image::fig_2_data_model_structure.svg[]
+image::figs/fig_2_data_model_structure.svg[]
 
 Every level in the data model structure inherits metadata entities and elements from the higher levels. In order to increase adoption, a flexible schema has been developed. This will allow for extension points where the schema in each layer can be extended to accommodate additional information on the next specific layer until, finally, the local implementation can add specific entities or metadata elements to satisfy specific local needs. Extension points can be implemented by:
 
@@ -174,7 +174,7 @@ The use cases for creation of 3D Heritage Models are wide ranging, but the use c
 The CITS 3DHM inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in (Figure 3). It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and Representation level but otherwise the structure is identical. 
 
 .Example Information Package Folder Structure
-image::fig_3_package_structure.svg[]
+image::figs/fig_3_package_structure.svg[]
 
 Multiple formats of the same 3D model which have been created through transformation events may be included in a single package and held in individual Representations (for example proprietary BIM models and STEP-IFC derivations). Information related to a transformation event (software used, parameters etc) should be included in the relevant documentation/paradata folder and details of the event recorded in PREMIS. 
 
